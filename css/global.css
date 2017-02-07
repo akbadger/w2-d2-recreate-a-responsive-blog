@@ -1,71 +1,110 @@
 * {
     box-sizing: border-box;
 }
+
 img {
-    width: 100%;
+    width: 50%;
+    border-radius: 50%;
+}
+
+body {
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
 header {
-    display: none;
-}
-
-.container {
-    max-width: 960px;
-    margin: 0 auto;
-
-}
-
-.row {
-    display: flex;
-    flex-direction: column;
-
-}
-
-.column {
-    flex: 1;
-}
-
-.field {
-    padding: 20px;
-    margin-bottom: 20px;
-
-}
-
-.field label {
     display: block;
-    font-weight: bold;
-    
-}
-
-.field input {
-    display: block;
-    padding: 5px;
-    height: 40px;
-    width: 100%;
-}
-
-/*Phablet */
-@media all and (min-width: 544px) {
-    .row {
-    flex-direction: row;
-}
-header {
-    display: block;
-    background: url(https://unsplash.it/600?random);
+    background-color: blue;
     background-size: cover;
     background-position: 50% 50%;
-    padding: 15vw 0 15vw 0;
+    padding: 25vw 0 5vw 0;
     text-align: center;
+}
+
+header .howdie {
+    font-size: 4vw;
+    text-transform: uppercase;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 3vw;
 }
 
 header h1 {
     color: white;
     margin: 0;
     text-shadow: 0 0 3px darkgray;
-    font-size: 10vw;
+    font-size: 5vw;
+    padding-bottom: 10vw;
 }
 
-/*Tablet*/
-@Media all and (min-width: 767px) {
-   
+header span {
+    font-weight: normal;
 }
+
+header .coffee {
+    text-align: center;
+    border: 1px solid white;
+    color: white;
+    display: inline;
+    padding-left: 4vw;
+    padding-right: 18vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    border-radius: 2px;
+    font-size: 4vw;
+    
+}
+
+.fa-arrow-right {
+    text-align: right;
+}
+
+.container {
+    max-width: 960px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    padding-top: 15vw;
+}
+
+
+.column {
+    flex: 1;
+    color: white;
+    font-size: 3vw;
+}
+
+main {
+    padding: 0 3vw 0 3vw;
+    font-size: 4vw;
+}
+
+main h2 {
+    font-size: 4vw;
+}
+
+main h3 {
+    color: blue;
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 4vw;
+}
+main i {
+    padding-left: 2vw;
+    color: blue;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+
+/*Phablet */
+@media all and (min-width: 544px) {
+    .row {
+        flex-direction: column;
+    }
+    /*Tablet*/
+    @Media all and (min-width: 767px) {}
