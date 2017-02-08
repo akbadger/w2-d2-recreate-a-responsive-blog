@@ -14,6 +14,7 @@ body {
 }
 
 header {
+    display: block;
     background-color: blue;
     background-size: cover;
     background-position: 50% 50%;
@@ -26,10 +27,10 @@ header, main {
 }
 
 header .howdie {
-    font-size: 2vw;
+    font-size: 5vw;
     text-transform: uppercase;
     color: white;
-    padding-top: 30px;
+    padding-top: 6vw;
     padding-bottom: 3vw;
 }
 
@@ -37,7 +38,7 @@ header h1 {
     color: white;
     margin: 0;
     text-shadow: 0 0 3px darkgray;
-    font-size: 3vw;
+    font-size: 5vw;
     padding-bottom: 10vw;
 }
 
@@ -65,12 +66,9 @@ header .coffee {
     border: 1px solid white;
     color: white;
     display: inline;
-    padding-left: 4vw;
-    padding-right: 6vw;
-    padding-top: 2vw;
-    padding-bottom: 2vw;
+    padding: 2vw 6vw 2vw 4vw;   
     border-radius: 2px;
-    font-size: 2vw;
+    font-size: 5vw;
 }
 
 .coffee i {
@@ -80,28 +78,28 @@ header .coffee {
 .icons {
     flex: 1;
     color: white;
-    font-size: 2vw;
+    font-size: 5vw;
 }
 
 main {
     padding: 0 3vw 0 3vw;
-    font-size: 2vw;
+    font-size: 5vw;
 }
 
 main h2 {
-    font-size: 3vw;
+    font-size: 6vw;
 }
 
 main h3 {
     color: blue;
     text-transform: uppercase;
     text-align: left;
-    font-size: 3vw;
+    font-size: 6vw;
 }
 main i {
     padding-left: 2vw;
     color: blue;
-    font-size: 1vw;
+    font-size: 4vw;
 }
 
 ul {
@@ -110,11 +108,18 @@ ul {
 
 
 
-/*Phablet */
-@media all and (min-width: 544px) {
+/*Tablet */
+@media screen and (min-width: 544px) {
     body {
         flex-direction: row;
     }  
 }
+
+/*Desktop*/
+@media screen and (min-width: 768px) {
+    body {
+        flex-direction: row;
+    }
+
 
 /*Tablet*/
