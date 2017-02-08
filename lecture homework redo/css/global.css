@@ -2,10 +2,10 @@
     box-sizing: border-box;
 }
 img {
-    width: 50%;
-    border-radius: 50%;
+    width: 100%;
 }
-/* grids */
+
+/* Grids */
 body, header, .icons, main section {
     display: flex;
 }
@@ -14,18 +14,16 @@ body, header, main section {
     flex-direction: column;
 }
 
-/*columns*/
+/* Columns */
 header, header section, main, .icons > div, main section > div {
     flex: 1;
 }
 
-/* header column */
+
+/* Header Column */
 header {
-    /*display: block;*/
-    background-color: blue;
-    /*background-size: cover;*/
-    /*background-position: 50% 50%;*/
-    padding: 20px 10px 10px 10px;
+    padding: 60px 20px 20px 20px;
+    background: blue;
     color: white;
     justify-content: space-between;
     text-align: center;
@@ -35,20 +33,16 @@ header section:last-child {
     display: flex;
     align-items: flex-end;
 }
+
 header img {
     border-radius: 50%;
     max-width: 200px;
     box-shadow: -5px 5px 10px mediumblue;
     border: 1px solid mediumblue;
 }
-
 header h5 {
     text-transform: uppercase;
     opacity: .65;
-}
-
-header h1 {
-    padding-bottom: 20px;
 }
 
 header h1 > span {
@@ -86,21 +80,22 @@ header .icons > div:last-child {
     text-align: right;
 }
 
-/* main column */
+/* Main Column */
 main {
     padding: 50px 30px 30px 30px;
 }
 
 main section {
-    margin-bottom: 30px;
+    margin-bottom: 60px;
 }
 
 main h5 {
-    color: blue;
     text-transform: uppercase;
+    color: blue;
     font-weight: bold;
     margin: 0;
 }
+
 main p {
     line-height: 30px;
 }
@@ -119,7 +114,7 @@ main li {
 main li > .fa {
     color: blue;
     margin-right: 20px;
-    font-size: 10px;
+    font-size: 20px;
 }
 
 main h4 {
@@ -131,20 +126,18 @@ main h4 > .fa {
     margin-left: 20px;
 }
 
-
-
-/*Tablet */
-@media screen and (min-width: 767px) {
+/* Tablet Changes */
+@media all and (min-width: 767px) {
     body {
         flex-direction: row;
-    }  
+    }
     main {
         padding-left: 40px;
     }
 }
 
-/*Desktop*/
-@media screen and (min-width: 991px) {
+/* Laptop Changes */
+@media all and (min-width: 991px) {
     main section {
         flex-direction: row;
     }
@@ -157,4 +150,3 @@ main h4 > .fa {
         flex: 9;
     }
 }
-
